@@ -94,7 +94,7 @@ void dec3a8(int I0, int I1, int I2)
         GPIOB->BSRR |= (1 << 7);
         break;
     default:
-        GPIOB->BSRR |= 0x00;
+        GPIOB->BSRR |= 0xFF + 0xF;
         break;
     }
 }
